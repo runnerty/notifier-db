@@ -1,0 +1,37 @@
+{
+  "name": "@runnerty/notifier-db",
+  "version": "3.0.0",
+  "description": "Runnerty module: db notifier",
+  "author": "Runnerty Tech",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint '**/*.js' && prettier --check '**'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/runnerty/notifier-db.git"
+  },
+  "keywords": [
+    "runnerty",
+    "notifier",
+    "db",
+    "debug",
+    "shell"
+  ],
+  "bugs": {
+    "url": "https://github.com/runnerty/notifier-db/issues"
+  },
+  "homepage": "https://github.com/runnerty/notifier-db#readme",
+  "dependencies": {
+    "@runnerty/module-core": "~3.1.1",
+    "pg": "^8.8.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1"
+  }
+}

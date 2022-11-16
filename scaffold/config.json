@@ -1,0 +1,15 @@
+{
+  "notifiers": [
+    {
+      "id": "notifier_db_default",
+      "type": "@runnerty-notifier-db",
+      "user": "postgres",
+      "table": "rty.notifications",
+      "password": "my_password",
+      "database": "postgres",
+      "host": "my_host",
+      "port": "5432",
+      "columns": ["message", "mode"]
+    }
+  ]
+}

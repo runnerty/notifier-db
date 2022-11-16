@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "@runnerty-notifier-db",
+  "definitions": {
+    "config": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "pattern": "@runnerty-notifier-db"
+        },
+        "user": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "database": {
+          "type": "string"
+        },
+        "host": {
+          "type": "string"
+        },
+        "port": {
+          "type": "string"
+        },
+        "debug": {
+          "type": "boolean"
+        },
+        "ssl": {
+          "type": "object"
+        },
+        "connectionTimeoutMillis": {
+          "type": "number"
+        },
+        "keepAliveInitialDelayMillis": {
+          "type": "number"
+        },
+        "keepAlive": {
+          "type": "boolean"
+        },
+        "parseInputDatesAsUTC": {
+          "type": "boolean"
+        },
+        "query_timeout": {
+          "type": ["boolean", "number"]
+        },
+        "statement_timeout": {
+          "type": ["boolean", "number"]
+        },
+        "idle_in_transaction_session_timeout": {
+          "type": ["boolean", "number"]
+        },
+        "application_name": {
+          "type": "string"
+        },
+        "encoding": {
+          "type": "string"
+        }
+      }
+    },
+    "params": {
+      "type": "object",
+      "required": ["message"],
+      "properties": {
+        "message": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
